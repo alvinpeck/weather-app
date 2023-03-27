@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+@media only screen and (max-width: 900px) {
+  .clearance{
+    margin-top: 60px !important;
+ }
+
+  .image2 {
+    position: absolute;
+    right: 0px;
+    z-index: 999;
+    height: auto;
+    max-width: 50%  !important; 
+    margin-top: -100px  !important;
+  }
+
+  .eightypercent{
+    width: 95% !important;
+    margin: 0 auto;
+  }
+}
+
+.bg{
+  margin: 0 auto;
+}
+
+
+:root {
+  --primary-color: #007bff;
+  --background-color: #ffffff;
+}
+
+[data-theme="dark"] {
+  --primary-color: #00bfff;
+  --background-color: #1d1d1d;
+}
+
+.error{
+  color: red;
+  border: red;
+  padding: 10px;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.container {
+  padding: 16px;
+}
+
+/* light.css */
+body {
+  font-family: 'Josefin Sans';
+  background-image: url("../assets/bg-light.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.temp{
+  font-size: 8rem;
+  font-weight: 700;
+  color: #6C40B5;
+  padding: 0 !important;
+}
+/* dark.css */
+
+
+#light{
+  background-image: url("../assets/bg-light.png");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#dark{
+  background-image: url("../assets/bg-dark.png");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .card{
+  background-color: rgba(255, 255, 255, 0.5) !important;
+} */
+
+.background-colorthree{
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.background-colorfour{
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  border-radius: 40px !important;
+  padding: 20px;
+}
+
+.background-colorfive{
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  border-radius: 40px !important;
+  padding: 20px;
+}
+
+.background-colorsix{
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border-radius: 20px !important;
+  padding: 10px;
+  margin-bottom: 0.7rem;
+}
+
+.image2 {
+  position: absolute;
+  right: 0px;
+  z-index: 999;
+  height: auto;
+  max-width: 50%;
+  margin-top: -140px
+}
+
+.eightypercent{
+  width: 90% !important;
+  margin: 0 auto;
+}
+
+.clearance{
+  margin-top: 140px;
+}
+
+.search {
+  border-radius: 25px;
+  opacity: .5;
+  margin-top: 50px;
+  width: 50%;
+}
+
+.right{
+  float: right;
+}
+
+/* Box CCS  */
+.content {
+  border-radius: 25px;
+  color: #000000;
+  margin: auto;
+  width: 80%;
+  height: 90%
+}
+

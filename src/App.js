@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import  { createContext, useState } from "react";
+import './css/App.css';
+import Search from './components/Search';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Switch from 'react-js-switch'
+// import { ThemeProvider } from "react-bootstrap";
+
+export const ThemeContext = createContext(null);
 
 function App() {
+  const [theme, setTheme] = useState("light")
+  const toggleTheme = () => {
+    setTheme((current) => (current === "light" ? "dark" : "light"))
+  } 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeContext.Provider value ={{theme,setTheme}} >
+      <div className="bg" id={theme}>
+          <Switch onChange={toggleTheme} checked={theme === "dark"} />
+          <Search />
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
